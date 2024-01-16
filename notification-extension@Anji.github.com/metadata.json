@@ -1,0 +1,7 @@
+{
+    "uuid": "notification-extension@Anji.github.com",
+    "name": "Notification Extension",
+    "description": "An Extension which is responsible for showing System notifications ",
+    "shell-version": [ "45" ],
+    "url": "https://gjs.guide/extensions"
+}
