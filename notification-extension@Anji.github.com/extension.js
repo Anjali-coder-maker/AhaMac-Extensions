@@ -84,7 +84,7 @@ const FreezableBinLayout = GObject.registerClass(
         this._messageList = new Calendar.CalendarMessageList();
         
         // Add the indicator to the panel
-        Main.panel.addToStatusArea(this.uuid, this._indicator, 0, 'right');
+        Main.panel.addToStatusArea(this.uuid, this._indicator, 'right');
 
         this._indicator.connect('button-press-event',() => {
           

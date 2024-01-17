@@ -73,9 +73,12 @@ export default class SearchLightExt extends Extension {
   // Add the icon to the button
   this.searchIcon.add_child(this.Sicon);
   // Add the search icon/button to the panel at the top right side
-   Main.panel.addToStatusArea('search-light-extension', this.searchIcon, 0, 'right');
+   Main.panel.addToStatusArea('search-light-extension', this.searchIcon,'right');
   // Connect button click event to show the search functionality
-  this.searchIcon.actor.connect('button-press-event', this._toggle_search_light.bind(this));
+  this.searchIcon.connect('button-press-event', 
+  this.toggle_spotlight.bind(this)
+  );
+
   //End of the code for search Icon
 
  
@@ -132,6 +135,8 @@ export default class SearchLightExt extends Extension {
       track_hover: true,
       can_focus: true,
     });
+
+    
     this.hide();
     this.container._delegate = this;
 
@@ -212,6 +217,15 @@ export default class SearchLightExt extends Extension {
     this.searchIcon?.destroy();
     this.searchIcon = null;
 
+  }
+
+  toggle_spotlight(){
+    console.log("visdhikahdkahida",this._visible);
+    if(this.mainContainer.opacity === 255){
+      this.mainContainer.opacity = 0;
+    }else{
+      this._toggle_search_light();
+    }
   }
 
   _setupBackground() {
