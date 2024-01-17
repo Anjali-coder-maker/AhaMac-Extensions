@@ -3,5 +3,5 @@
     "name": "Notification Extension",
     "description": "An Extension which is responsible for showing System notifications ",
     "shell-version": [ "45" ],
-    "url": "https://gjs.guide/extensions"
+    "url": "https://github.com/Anjali-coder-maker/AhaMac-Extensions.git"
 }

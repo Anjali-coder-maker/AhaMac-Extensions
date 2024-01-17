@@ -415,7 +415,7 @@ export default class SearchLightExt extends Extension {
     }
     Main.overview.toggle = () => {
       if (this._search && this._search.visible) {
-        this._search._text.get_parent().grab_key_focus()= "Spot";
+        this._search._text.get_parent().grab_key_focus();
       }
     };
     if (!Main.overview._hide) {

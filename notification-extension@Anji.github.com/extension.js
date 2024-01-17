@@ -69,7 +69,11 @@ const FreezableBinLayout = GObject.registerClass(
         this._indicator.add_child(icon);
 
         let layout = new FreezableBinLayout();
-        let bin = new St.Widget({layout_manager: layout});
+        let bin = new St.Widget({
+            layout_manager: layout , 
+            width : 400,
+            height : 160,
+       });
         // For some minimal compatibility with PopupMenuItem
         bin._delegate = this;
         this._indicator.menu.box.add_child(bin);

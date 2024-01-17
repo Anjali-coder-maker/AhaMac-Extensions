@@ -57,28 +57,39 @@ export default class TweakIndicatorExtension {
        this._indicator = new TweakIndicator();
         
         Main.panel.statusArea.quickSettings.addExternalIndicator(this._indicator);
-        
-        Main.panel.statusArea.quickSettings._network.visible = false;;
        
+     
+        Main.panel.statusArea.quickSettings._network.visible = false;
+       
+        
         Main.panel.statusArea.quickSettings._system.visible = false;
         
-        Main.panel.statusArea.quicksettings.volumeIndicator.visible = false
        
-        // let SoundOutput = Main.panel.statusArea.quickSettings._volumeOutput;
-        // SoundOutput.visible = false;
-      
-    }
+        //Main.panel.statusArea.quicksettings._volumeInput.visible = false
+       }
+        
+       
+        
+    
 
     disable() {
      this._indicator._destroy();
      
         this._indicator = null;
-        Main.panel.statusArea.quickSettings._network.visible = true;
+
        
-        Main.panel.statusArea.quickSettings._system.visible = true;
+            
+            Main.panel.statusArea.quickSettings._network.visible = true;
+           
+           
+            Main.panel.statusArea.quickSettings._system.visible = true;
+            
+           
+           // Main.panel.statusArea.quicksettings._volumeInput.visible = true;
+            
         
-        Main.panel.statusArea.quickSettings._volumeInput.visible = true;
     }
+    
 
     
 

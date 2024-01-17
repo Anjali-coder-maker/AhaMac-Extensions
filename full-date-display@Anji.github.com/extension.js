@@ -39,7 +39,7 @@ export default class FullDateDisplayExtension extends Extension {
 }
 
 function tick() {
-    const format = "%a %-e %b  %I:%M %p"; // Adjusted format string
+    const format = "%a  %-e  %b   %I:%M %p"; // Adjusted format string
 
     formatClockDisplay.set_text(new GLib.DateTime().format(format));
     return true;
