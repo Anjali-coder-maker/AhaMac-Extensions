@@ -52,7 +52,7 @@ var SearchLight = GObject.registerClass(
   }
 );
 
-export default class SearchLightExt extends Extension {
+export default class SpotLIghtExt extends Extension {
   enable() {
 
     this._style = new Style();
@@ -183,7 +183,7 @@ export default class SearchLightExt extends Extension {
 
     // this._loTimer.runOnce(() => {
     //   this.show();
-    //   log('SearchLightExt: ???');
+    //   log('SpotLIghtExt: ???');
     // }, 1500);
   }
 

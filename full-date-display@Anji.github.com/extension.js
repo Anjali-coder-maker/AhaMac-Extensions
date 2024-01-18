@@ -34,7 +34,7 @@ export default class FullDateDisplayExtension extends Extension {
         originalClockDisplay.get_parent().remove_child(formatClockDisplay);
         originalClockDisplay.show();
         settings = null;
-        formatClockDisplay = null;
+        // formatClockDisplay = null;
     }
 }
 
